@@ -1,10 +1,10 @@
 // --- Sticker assets (replace with your own PNG/SVG URLs as desired)
 const stickers = {
-  idle: "assets/images.png",
-  think: "assets/images.jpg",
-  correct: "assets/56167b76252a05dbf3a989c37a9b67fb.jpg",
-  wrong: "assets/download.jpg",
-  hint: "assets/56167b76252a05dbf3a989c37a9b67fb.jpg"
+  idle: "images.png",
+  think: "images.jpg",
+  correct: "56167b76252a05dbf3a989c37a9b67fb.jpg",
+  wrong: "download.jpg",
+  hint: "56167b76252a05dbf3a989c37a9b67fb.jpg"
 };
 
 // 20 unique math problems, well-structured and shuffled at each game start
