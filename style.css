@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #ff595e, #ffca3a, #8ac926, #1982c4, #6a4c93);
+  background-size: 400% 400%;
+  animation: gradientShift 18s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientShift {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+main {
+  width: 90vw;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem 2rem 3rem 2rem;
+  border-radius: 2em;
+  box-shadow: 0 10px 40px -5px rgba(0,0,0,0.25);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+#sticker-main {
+  width: 130px;
+  margin-bottom: 1.5rem;
+  animation: swing 3s ease-in-out infinite;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-8deg);}
+  50% { transform: rotate(8deg);}
+}
+
+.notice {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #234;
+  background-color: #e3f2fd;
+  border-radius: 1em;
+  padding: 0.7em 1em;
+}
+
+.progress {
+  font-weight: 600;
+  color: #2a5186;
+  margin-bottom: 1rem;
+}
+
+#math-question {
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+  min-height: 2em;
+  font-weight: 600;
+}
+
+#math-answer {
+  width: 12rem;
+  font-size: 1.1rem;
+  padding: 0.5em 1em;
+  border-radius: 1.2em;
+  border: 2px solid #87b8f2;
+  margin-right: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#math-answer:focus {
+  border-color: #3a68b1;
+}
+
+#math-form button[type="submit"] {
+  background-color: #3a68b1;
+  color: white;
+  border: none;
+  font-size: 1.08rem;
+  padding: 0.5em 1.2em;
+  border-radius: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#math-form button[type="submit"]:hover {
+  background-color: #285092;
+}
+
+#hint-btn {
+  background-color: #ffecb3;
+  border: 1px solid #ffe066;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  width: 36px;
+  height: 36px;
+  line-height: 34px;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  user-select: none;
+}
+
+#hint-btn:active {
+  transform: scale(1.15) rotate(-15deg);
+  transition: transform 0.15s ease;
+}
+
+#math-feedback {
+  min-height: 2em;
+  margin-top: 0.6rem;
+  font-weight: 600;
+  color: #1a4160;
+}
+
+#post-status {
+  margin-top: 1.2rem;
+  min-height: 3em;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #234d36;
+}
+
+#restart-btn {
+  margin-top: 1.5rem;
+  padding: 0.7em 2em;
+  font-size: 1.15rem;
+  border-radius: 1.5em;
+  border: none;
+  background: #ffd54f;
+  color: #222;
+  box-shadow: 0 0 14px 2px #ffcc00aa;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+#restart-btn:hover {
+  background: #ffca28;
+}
