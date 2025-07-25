@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Math Master: Multi-Problem Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section id="game-area">
+      <img src="assets/images.jpg" alt="Game Mascot" id="sticker-main" />
+      <h1>Guess My Secret Number</h1>
+      <div class="notice">
+        <strong>Math Practice!</strong> Each guess requires solving a math problem.<br />
+        <small>Decimal or round-off answers? Enter as e.g. <b>2.67</b> or <b>3</b>.</small>
+      </div>
+      <div class="progress">
+        Attempts: <span id="attempts">0</span> &bull; Math Accuracy: <span id="accuracy">100%</span>
+      </div>
+      <form id="math-form">
+        <div id="math-question"></div>
+        <input type="text" id="math-answer" placeholder="Your math answer..." autocomplete="off" required />
+        <button type="submit">Submit Answer</button>
+        <button type="button" id="hint-btn" title="Show Hint">?</button>
+      </form>
+      <div id="math-feedback"></div>
+      <div id="post-status"></div>
+      <button id="restart-btn" style="display:none;">Restart Game</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
